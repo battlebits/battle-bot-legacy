@@ -1,2 +1,2 @@
 # battle-bot
-Um bot para Discord do servidor
+O BOT do Discord Geral do Servidor.
