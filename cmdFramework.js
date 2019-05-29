@@ -4,6 +4,7 @@ const fs = require("fs");
 const enmap = require("enmap");
 module.exports.client = null;
 module.exports. suggestionArray = new enmap();
+module.exports.captchaArray = new enmap();
 
 console.log("  ")
 console.log("[FRAMEWORK] Discord.js command and event handler.")
@@ -30,6 +31,7 @@ module.exports.loadEvents = function(){
 
 module.exports.loadCommands = function (){
   this.client.sArray = this.suggestionArray;
+  this.client.cArray = this.captchaArray;
   this.client.commands = new enmap();
 
     fs.readdir("./commands/", (err, files) => {
