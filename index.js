@@ -7,7 +7,6 @@ const cfg = require('./config');
 
 
 cmdFramework.client = client;
-
 cmdFramework.client.cfg = cfg;
 
 cmdFramework.loadCommands();
